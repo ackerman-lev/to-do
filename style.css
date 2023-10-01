@@ -5,7 +5,7 @@ html,
 body {
     margin: 0;
     padding: 0s;
-    background: linear-gradient(353deg, rgba(0, 202, 255, 1) 0%, rgba(0, 255, 128, 1) 100%) !important;
+    background: linear-gradient(353deg, rgb(212, 0, 255) 0%, rgb(0, 204, 255) 100%) !important;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -102,7 +102,7 @@ li {
 }
 
 #btn {
-    background: linear-gradient(353deg, rgba(0, 202, 255, 1) 0%, rgba(0, 255, 128, 1) 100%);
+    background: linear-gradient(353deg, rgb(212, 0, 255) 0%, rgb(0, 204, 255) 100%);
     border: none;
     outline: none;
     padding: 15px;
