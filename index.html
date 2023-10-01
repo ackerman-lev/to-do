@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%236ee7c9%22></rect><path fill=%22%23fff%22 d=%22M14.27 20.84L14.27 20.84L32.45 21.38L50.63 20.84Q52.07 20.84 53.19 21.79Q54.32 22.73 54.32 24.35Q54.32 25.97 53.19 26.92Q52.07 27.86 50.63 27.86L50.63 27.86L36.68 27.41Q35.96 42.89 35.96 52.03Q35.96 61.16 36.36 69.71Q36.77 78.26 36.77 79.70Q36.77 81.14 35.55 82.58Q34.34 84.02 32.45 84.02Q30.56 84.02 29.34 82.58Q28.13 81.14 28.13 79.70Q28.13 78.26 28.53 69.71Q28.94 61.16 28.94 53.02Q28.94 44.87 28.13 27.41L28.13 27.41L14.27 27.86Q12.83 27.86 11.70 26.92Q10.58 25.97 10.58 24.35Q10.58 22.73 11.70 21.79Q12.83 20.84 14.27 20.84ZM60.53 84.02Q54.86 84.02 50.99 79.52Q47.12 75.02 47.12 69.13Q47.12 63.23 49.46 58.10Q51.80 52.97 55.40 49.64Q59 46.31 63.18 44.38Q67.37 42.44 71.82 42.44Q76.28 42.44 80.06 45.77L80.06 45.77Q79.97 39.02 79.43 30.97Q78.89 22.91 78.89 20.84Q78.89 18.77 79.97 17.38Q81.05 15.98 82.76 15.98Q84.47 15.98 85.69 17.47Q86.90 18.95 86.90 21.43Q86.90 23.90 86.13 32.95Q85.37 41.99 85.37 49.91Q85.37 57.83 86 63.64Q86.63 69.44 87.35 71.51L87.35 71.51Q89.42 77 89.42 78.89L89.42 78.89Q89.42 84.02 85.46 84.02L85.46 84.02Q80.69 84.02 79.88 73.85L79.88 73.85Q76.28 78.62 71.24 81.32Q66.20 84.02 60.53 84.02ZM57.06 53.51Q53.06 57.47 53.06 63.23Q53.06 68.99 57.06 73.00Q61.07 77 66.78 77Q72.50 77 76.37 73.00Q80.24 68.99 80.24 62.87Q80.24 56.75 76.73 53.15Q73.22 49.55 67.14 49.55Q61.07 49.55 57.06 53.51Z%22></path></svg>" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="splash">
+        <h1 class="fade-in">To-Do <span style="color: rgba(0, 255, 128, 1)">List</span></h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="content-1">
+                <h1>What's Up Hustler<span id="name-output"></span></h1><br>
+                <div class="flx">
+                    <p>CREATE YOUR TO-DO LIST</p>
+                    <label for="input-value" style="color: rgb(94, 94, 94);"><strong>What's in your to-do list?</strong></label>
+                    <input type="text" class="input-value" placeholder="eg. Complete Maths Assignment">
+                    <br />
+                    <button id="btn">Click here to Add in the Queue</button>
+                </div>
+                
+            </div>
+            <div class="vertical-border"></div>
+            <div class="content-2">
+                <ul class="to-do">
+                </ul>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const splash = document.querySelector('.splash');
+        document.addEventListener('DOMContentLoaded', (e)=>{
+            setTimeout(()=>{
+                splash.classList.add('display-none');
+            }, 3000);
+        })
+    </script>
+</body>
+</html>
